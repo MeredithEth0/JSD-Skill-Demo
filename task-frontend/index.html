@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMCTS Task Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Create New Task</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="title">Title (required)</label>
+                    <input type="text" id="title" placeholder="Title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description (optional)</label>
+                    <textarea id="description" placeholder="Description (optional)"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="status">Status (required)</label>
+                    <select id="status" required>
+                        <option value="">Select status</option>
+                        <option value="PENDING">PENDING</option>
+                        <option value="IN_PROGRESS">IN_PROGRESS</option>
+                        <option value="COMPLETED">COMPLETED</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dueDateTime">Due date/time (required)</label>
+                    <input type="datetime-local" id="dueDateTime" required>
+                </div>
+                
+                <button type="submit">Create Task</button>
+            </form>
+            <div id="message"></div>
+        </div>
+        
+        <div class="list-section">
+            <div class="list-header">
+                <h2>All Tasks</h2>
+                <button id="refreshList">Refresh</button>
+            </div>
+            <div id="tasksContainer">
+                <p>Loading cases....</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
