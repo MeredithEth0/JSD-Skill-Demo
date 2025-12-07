@@ -59,7 +59,7 @@ To test the front-end I have conducted a lighthouse test. The score of the light
 
 On the initial test the scores were:
 
-![Lighthouse test 1 scores](image.png)
+![Lighthouse test 1 scores](<External Documents/image.png>)
 
 All scores are showing as good except for the accessibility rating. Upon investigation the lighthouse test reports that the accessibility issues are as follows:
 #### Contrast:
@@ -75,7 +75,7 @@ Secondly I implemented labels on the form elements and select elements to satisf
 
 I then was able to run the second Lighthouse test which returned scores as such.
 
-![Lighthouse test 2 scores](image-1.png)
+![Lighthouse test 2 scores](<External Documents/image-1.png>)
 
 This has resolved the issues lighthouse had brought up making the interface more accessible for the user.
 
